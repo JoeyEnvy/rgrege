@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rghth - Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header, footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #333;
+        }
+        .hero img {
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .hero div {
+            flex: 1;
+            padding: 20px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .about, .services, .testimonials, .contact {
+            margin-bottom: 40px;
+        }
+        .services, .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .services div, .testimonials div {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea, .contact button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .contact button {
+            background-color: #1f1f1f;
+            color: #fff;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #333;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            .hero img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>rghth - Innovating for Tomorrow</h1>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section class="hero">
+        <div>
+            <h2>Welcome to rghth</h2>
+            <p>At rghth, we are dedicated to transforming the technological landscape with our innovative solutions. Our mission is to empower businesses with cutting-edge technology that enhances their capabilities and drives growth.</p>
+            <p>Join us as we venture into the future of technology, creating solutions that not only solve today's problems but also anticipate tomorrow's needs. Our team is passionate about delivering excellence and committed to pushing the boundaries of what's possible.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1581093448790-5b5d24d7d9e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwyMDg1NXwwfDF8c2VhcmNofDd8fHRlY2hub2xvZ3klMjBjb21wdXRlcnxlbnwwfHx8fA&ixlib=rb-1.2.1&q=80&w=800" alt="Technology Image">
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>rghth is a forward-thinking technology firm that thrives on innovation and creativity. We cater to a diverse clientele, ranging from startups looking to make their mark, to established enterprises seeking to optimize their operations. Our solutions are tailored to meet the unique needs of each client, ensuring maximum impact and satisfaction.</p>
+        <p>Our core values are rooted in integrity, excellence, and collaboration. We believe in building strong partnerships with our clients and working together to achieve shared goals. Our team of experts is always ready to go the extra mile to deliver results that exceed expectations.</p>
+        <ul>
+            <li>State-of-the-art technology solutions</li>
+            <li>Customized digital strategies</li>
+            <li>Expert consulting services</li>
+            <li>Dedicated support and maintenance</li>
+            <li>Scalable and adaptable frameworks</li>
+        </ul>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div>
+            <h3>Consulting</h3>
+            <p>Providing expert advice to help you navigate the complexities of technology.</p>
+            <i class="fas fa-lightbulb icon"></i>
+        </div>
+        <div>
+            <h3>Development</h3>
+            <p>Custom software solutions tailored to your business needs.</p>
+            <i class="fas fa-code icon"></i>
+        </div>
+        <div>
+            <h3>Integration</h3>
+            <p>Seamlessly integrating new technologies with your existing systems.</p>
+            <i class="fas fa-cogs icon"></i>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div>
+            <h3>Client A</h3>
+            <p>"rghth transformed our business with their innovative solutions. Their team is incredibly knowledgeable and supportive."</p>
+            <i class="fas fa-user icon"></i>
+        </div>
+        <div>
+            <h3>Client B</h3>
+            <p>"The expertise and dedication of rghth's team is unmatched. They have become a valued partner in our growth journey."</p>
+            <i class="fas fa-user icon"></i>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2023 rghth. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
